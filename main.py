@@ -35,7 +35,7 @@ while True:
     bytes_received = psutil.net_io_counters()[1]
     
     disk_usage = psutil.disk_usage('/')[3]
-    cur.execute(f'INSERT INTO performance VALUES (NOW(), {cpu_usage}, {memory_usage}, {cpu_interrupts}, {cpu_calls}, {memory_used}, {memory_free}, {bytes_sent}, {bytes_received}, {disk_usage})')
+    cur.execute(f'INSERT INTO performance VALUES (NOW(), {cpu_usage}, {memory_usage}, {cpu_interrupts}, {cpu_calls}, {memory_used}, {memory_free}, {bytes_sent}, {bytes_received    }, {disk_usage})')
     conn.commit()
     
     time.sleep(1)
