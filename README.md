@@ -10,10 +10,10 @@ This project allows you to monitor and record essential system performance metri
    - Execute the SQL script (`System Performance.sql`) in your PostgreSQL database to create the `performance` table, where system performance data will be stored.
 
 2. **Update Connection Details**
-   - Modify the connection details (host, port, database, user, password) in the `performance_monitor.py` script to match your PostgreSQL setup.
+   - Modify the connection details (host, port, database, user, password) in the `main.py` script to match your PostgreSQL setup.
 
 3. **Run the Monitoring Script**
-   - Execute the Python script (`performance_monitor.py`) to start monitoring and recording system performance metrics into the PostgreSQL database.
+   - Execute the Python script (`main.py`) to start monitoring and recording system performance metrics into the PostgreSQL database.
 
 4. **Visualize Data with Power BI**
    - Open the Power BI file (`System Performance.pbix`) to visualize and analyze the collected system performance data. Update the connection string in Power BI to connect to your PostgreSQL database.
